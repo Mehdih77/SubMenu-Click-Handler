@@ -21,7 +21,7 @@ export default function SubMenuClickHandler() {
     //   setOpen(false);
     // }
     let handler = (e) => {
-      if (!menuRef.current?.contains(e.target)) {
+      if (!menuRef?.current?.contains(e.target)) {
         setOpen(false);
       }
     };
